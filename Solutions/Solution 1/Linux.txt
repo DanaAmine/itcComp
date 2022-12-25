@@ -1,0 +1,3 @@
+mkdir Sharing_is_caring
+mkdir /usr/sys/tmp/itc
+mv Sharing_is_caring /usr/sys/tmp/itc

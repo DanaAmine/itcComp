@@ -1,0 +1,5 @@
+async weather = ()=>{
+	let response = await fetch("https://openweathermap.org/api")
+	//wsh dir b response
+
+}

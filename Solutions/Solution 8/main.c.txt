@@ -1,0 +1,12 @@
+create database itc;
+create table itc(
+name varchar(20);
+firstname varchar(20);
+age int;
+);
+insert into itc(firstname,name,age)values("Amine","Brd",18);
+ALTER itc
+ADD job varchar(50);
+UPDATE itc
+SET firstname = "Tarek",name = "Bouras"
+WHERE firstname = "Amine";

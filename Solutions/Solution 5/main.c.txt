@@ -1,0 +1,23 @@
+int main(){
+int n,i,j;
+    float min;
+    printf("give the number of points:");
+    scanf("%d",&n);
+    int t[n][2];
+    for(i=0;i<n;i++){
+        printf("Give x:");
+        scanf("%d",&t[i][0]);
+        printf("Give y:");
+        scanf("%d",&t[i][1]);
+    }
+
+    min = sqrt( pow(t[0][0]-t[1][0],2) + pow(t[0][1] - t[1][1],2));
+    for(i=0;i<n;i++){
+        for(j=i;j<n;j++){
+            if(min >(sqrt(pow(t[i][0]-t[j+1][0],2) + pow(t[i][0] - t[j+1][1],2)))){
+                min = sqrt(pow(t[i][0]-t[j+1][0],2) + pow(t[i][1] - t[j+1][1],2));
+            }
+        }
+    }
+    printf("%f",min);
+}
